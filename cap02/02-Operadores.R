@@ -1,53 +1,66 @@
-#diretorio
-setwd('D:/#dev/scripts-dataset-r/cap02')
+# Operadores Básicos, Relacionais e Lógicos em R
+
+# Obs: Caso tenha problemas com a acentuação, consulte este link:
+# https://support.rstudio.com/hc/en-us/articles/200532197-Character-Encoding
+
+# Configurando o diretório de trabalho
+# Coloque entre aspas o diretório de trabalho que você está usando no seu computador
+# Não use diretórios com espaço no nome
+setwd("C:/FCD/BigDataRAzure/Cap02")
 getwd()
 
-##Opeçaões
+# Operadores Básicos
 
-#soma
+# Soma
 7 + 7
 
-#subtração
+# Subtração
 7 - 4
 
-#mutilplicação
+# Multiplicação
 5 * 5
 
-#divisão
+# Divisão
 6 / 6
 
-#potência
+# Potência
 3^2
 3**2
 
-#módulo
-16 %% 3
+# Módulo
+16 %% 3 
 
-##Operadores Relacionais
 
-#atribuindo variaveis
+# Operadores Relacionais
+
+# Atribuindo variáveis
 x = 7
 y = 5
 
-#operadores
-x > 8 
-x < 8 
+# Operadores
+x > 8
+x < 8
 x <= 8
 x >= 8
 x == 8
 x != 8
 
-##operadores lógicos
 
-#And
+# Operadores lógicos
+
+# And
 (x==8) & (x==6)
-(x==7) & (x==5)
-(x==8) & (x==5)
+(x==7) & (x>=5)
+(x==8) & (x==7)
 
-#Or
+# Or
 (x==8) | (x>5)
 (x==8) | (x>=5)
 
-#not
-x>8
-print(!x>8)
+# Not
+x > 8
+print(!x > 8)
+
+
+
+

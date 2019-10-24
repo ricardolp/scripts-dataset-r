@@ -1,56 +1,70 @@
-#Primeiros passos na Linguagem R
+# Primeiros Passos na Linguagem R
 
-#Configurando diretório de trabalho
-setwd("D:/#dev/scripts-dataset-r/cap02")
+# Obs: Caso tenha problemas com a acentuação, consulte este link:
+# https://support.rstudio.com/hc/en-us/articles/200532197-Character-Encoding
 
-#Recuperando diretório de trabalho
+# Configurando o diretório de trabalho
+# Coloque entre aspas o diretório de trabalho que você está usando no seu computador
+# Não use diretórios com espaço no nome
+setwd("C:/FCD/BigDataRAzure/Cap02")
 getwd()
 
-#Nome dos contributors
+
+# Nome dos Contributors
 contributors()
 
-#Licensa do software
+
+# Licença
 license()
 
-#Informações sobre a sessão
+
+# Informações sobre a sessão
 sessionInfo()
 
-#imprimir na tela
-print('Estou iniciando minha caminhada na carreira de cientista de dados')
 
-#criar graficos
+# Imprimir na tela
+print('Estou iniciando minha caminhada na carreira de Cientista de Dados')
+
+
+# Criar gráficos
 plot(1:25)
 
-#Instalar pacotes
+
+# Instalar pacotes
 install.packages('randomForest')
 install.packages('ggplot2')
-install.packages('dplyr')
-install.packages('devtools')
+install.packages("dplyr")
+install.packages("devtools")
 
-#carrega pacote
+
+# Carregar o pacote
 library(ggplot2)
 
-#descarrega pacote 
-#após isto o pacote não pode ser usado na sessão
-detach(package.ggplot2)
 
-#se não souber nada subre a função
-#chamar a função help passando a função como parametro
+# Descarregar o pacote
+detach(package:ggplot2)
+
+
+# Se souber o nome da função
 help(mean)
 ?mean
 
-#para buscar mais opções sobre uma função, usar o pacote SOS
-install.packages('sos')
+
+# Para buscar mais opções sobre uma função, use o pacote SOS
+install.packages("sos")
 library(sos)
 findFn("fread")
 
-#se não souber nome da função
+
+# Se não souber o nome da função
 help.search('randomForest')
+help.search('matplot')
 ??matplot
 RSiteSearch('matplot')
-
-#exemplo de utilização da função
 example('matplot')
 
-#sair
+
+# Sair
 q()
+
+

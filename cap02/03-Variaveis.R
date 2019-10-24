@@ -1,60 +1,69 @@
-#Primeiros passos na Linguagem R
+# Variáveis em R
 
-#Configurando diretório de trabalho
-setwd("D:/#dev/scripts-dataset-r/cap02")
+# Obs: Caso tenha problemas com a acentuação, consulte este link:
+# https://support.rstudio.com/hc/en-us/articles/200532197-Character-Encoding
 
-#Recuperando diretório de trabalho
+# Configurando o diretório de trabalho
+# Coloque entre aspas o diretório de trabalho que você está usando no seu computador
+# Não use diretórios com espaço no nome
+setwd("C:/FCD/BigDataRAzure/Cap02")
 getwd()
 
-#Criando variaveis
+# Criando Variáveis
 var1 = 100
 var1
-
-#verifica tipo do dado
 mode(var1)
+help("mode")
+sqrt(var1)
 
-#verificando o que função mode faz
-help('mode')
 
-#operações com variavel
-sqrt(var)
-
-#atribuindo valor a outra variavel
+# Podemos atribuir o valor de uma variável a outra variável
 var2 = var1
+var2
 mode(var2)
 typeof(var2)
-help('typeof')
+help("typeof")
 
-#variavel lista
+
+# Uma variável pode ser uma lista de elementos
 var3 = c("primeiro", "segundo", "terceiro")
 var3
 mode(var3)
 
-#variavel que pode ser função
+
+# Uma variável pode ser uma função
 var4 = function(x) {x+3}
 var4
 mode(var4)
 
-#mudar modo do dado
+
+# Podemos também mudar o modo do dado. 
 var5 = as.character(var1)
 var5
 mode(var5)
 
-#atribuição
+
+# Atribuindo valores a objetos
 x <- c(1,2,3)
 x
+x1 = c(1,2,3)
+x1
 c(1,2,3) -> y
 y
-assign("x", c(6,3,4,-2))
+assign("x", c(6.3,4,-2))
+x
 
-#valor em ua posição
+
+# Verificando o valor em uma posição específica
 x[1]
 
-#verifica objetos
+
+# Verificar objetos
 ls()
 objects()
 
-#remocer objetos
+
+# Remover objetos
 rm(x)
 x
 
